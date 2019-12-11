@@ -1,0 +1,94 @@
+<app-header></app-header>
+  
+  <ion-content padding>
+  
+  
+    <div class="backdrop" *ngIf="user">
+      <img src="{{'assets/imgs/background.jpg' }}">
+    </div>
+    <div class="backdrop-separator1"></div>
+    <div class="backdrop-separator2"></div>
+  
+    
+  
+    
+    <div class="poster" *ngIf="user">
+    
+      <img src="{{(user.avt != '' && user.avt != null)? user.avt : 'assets/imgs/profile.jpg' }}">
+    
+    
+    
+      
+    </div>
+  
+    <div class="movie-data" *ngIf="user">
+      <div class="title">{{ user.username }} {{user.fullname}}</div>
+    
+    
+    
+  
+    </div>
+    
+    
+    
+    <form padding (ngSubmit)="updateAddress()" [formGroup]="addressForm" *ngIf="user || user != null">
+      
+      
+      <ion-item>
+        <ion-label position = "fixed" class="pdl-15 txt-b3">Firstname</ion-label>
+        <ion-input formControlName="username" type="text"></ion-input>
+      </ion-item>
+  
+      <br>
+  
+      
+      <ion-item>
+        <ion-label position = "fixed" class="pdl-15 txt-b3">Lastname</ion-label>
+        <ion-input formControlName="fullname" type="text"></ion-input>
+      </ion-item>
+  
+      <br>
+      
+      <ion-item>
+        <ion-label position = "fixed" class="pdl-15 txt-b3">E-Mail</ion-label>
+        {{user.email}}
+      </ion-item>
+  
+      <br>
+  
+      
+      <ion-item>
+      
+        <ion-label position = "fixed" class="pdl-15 txt-b3">Address</ion-label>
+        <ion-input formControlName="address" type="text"></ion-input>
+      </ion-item>
+  
+      <br>
+  
+      
+      <ion-item>
+        <ion-label position = "fixed" class="pdl-15 txt-b3">Phone</ion-label>
+        <ion-input formControlName="phone" type="numbber"></ion-input>
+      </ion-item>
+  
+      <br>
+      <br>
+  
+      <div class="" text-center>
+        <ion-button expand="full"  color = "primary" type="submit" class="">
+          Save change
+        </ion-button>
+      </div>
+  
+      <br>
+      <br>
+      <br>
+    </form>
+  
+  
+  </ion-content>
+  
+  
+  
+  
+  

@@ -1,0 +1,55 @@
+.poster-effect {
+    position: relative;
+    z-index: 99999;
+    top: 0;
+    margin-left: 33%;
+    width: 35%;
+}
+
+.title-content {
+    position: relative;
+    color: white;
+    z-index: 999;
+    margin: 5%;
+    margin-top: 40%;
+
+}
+
+.bg-cart2 {
+    position: absolute;
+    margin-top: 40%;
+}
+
+.bg-cart1{
+    position: absolute;
+}
+
+.line {
+    border-bottom: 1px white solid;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.img-menu{
+    width: 40%;
+}
+
+.content-categoris{
+    position: relative;
+    z-index: 9999;
+    color:white;
+    margin: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 90%;
+    background:rgb(63, 63, 63);
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+
+    .title{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,13 @@
+[{
+    "name": "MIS PEDIDOS",
+    "redirectTo": "/cart"
+}, {
+    "name": "DIRECCIONES",
+    "redirectTo": "/food-search"
+}, {
+    "name": "INFORMACIÓN DE PAGOS",
+    "redirectTo": "/orders"
+}, {
+    "name": "EDITAR PERFIL",
+    "redirectTo": "/profile"
+}]

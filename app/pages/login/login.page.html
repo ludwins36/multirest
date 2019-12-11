@@ -1,0 +1,89 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+  <div class="form-center pdl-30 pdr-30">
+    <div class="background-image flex-row flex-ali-center flex-jus-center">
+      <img src="assets/imgs/bg-login.png">
+    </div>
+    <div class="wrapper-form pdl-10 pdr-10">
+      <div class="mgt-70 mgb-20">
+        <br>
+
+
+        <div class="logo">
+          <img src="{{'assets/imgs/logo.png' }}">
+        </div>
+
+      </div>
+      <div class="wrapp-form mgt--50" class="ion-padding">
+        <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+
+          <ion-item class="ion-text-center mgt-40 fw-400">
+
+            <ion-input #email formControlName="email" placeholder="Correo Electrónico" [(ngModel)]="user.email"
+              type="email" [class.invalid]="!loginForm.controls.email.valid && loginForm.controls.email.dirty" class="">
+            </ion-input>
+          </ion-item>
+
+          <div class="error-message" *ngIf="!loginForm.controls.email.valid  && loginForm.controls.email.dirty">
+            <p class="fs-11 mgt-5 txt-light">Please enter a valid email.</p>
+          </div>
+
+          <br>
+          <!-- <ion-list class="ani-bottom-to-top ion-text-center mgb-0 mgt-5">
+            <ion-item class="ion-text-center">
+              <ion-input #password formControlName="password" placeholder="Contraseña" type="password"
+                [class.invalid]="!loginForm.controls.password.valid && loginForm.controls.password.dirty"
+                class=""></ion-input>
+            </ion-item>
+          </ion-list> -->
+          <ion-item class="ion-text-center">
+            <ion-input #password formControlName="password" placeholder="Contraseña" type="password"
+              [(ngModel)]="user.password"
+              [class.invalid]="!loginForm.controls.password.valid && loginForm.controls.password.dirty" class="">
+            </ion-input>
+          </ion-item>
+
+          <div class="error-message" *ngIf="!loginForm.controls.password.valid && loginForm.controls.password.dirty">
+            <p class="fs-11 mgt-5 mgb-0 txt-light">Your password needs more than 6 characters.</p>
+          </div>
+
+          <br>
+
+          <ion-button expand="block" class="fw-600 mgt-20 spacing1 ani-bottom-to-top shadow-0" type="submit">
+            INICIAR SESIÓN
+          </ion-button>
+
+          <div class="mgt-30 ion-text-center">
+            <ion-label class="fw-300" color="medium">O PUEDES INICIAL CON!</ion-label>
+            <ion-button size="block" (click)="login_fb()" color="medium"
+              class="uppercase ion-text-center fw-600 spacing1 ani-bottom-to-top shadow-0 icon-face">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+            </ion-button>
+          </div>
+
+          <br>
+          <div class="mgb-10 ion-text-center">
+            <br>
+            <ion-label class="label-register" color="medium">¿AUN NO ERES MIEMBRO?</ion-label>
+            <ion-button fill="clear" size="block" color="light"
+              class="capitalize txt-light fs-16 txt3 pull-right pdr-0 " [routerLink]="'/register'">
+              REGISTRATE AHORA
+            </ion-button>
+          </div>
+
+          <br>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="background-image flex-row flex-ali-center flex-jus-center">
+      <img src="assets/imgs/bg-login.png">
+    </div> -->
+</ion-content>

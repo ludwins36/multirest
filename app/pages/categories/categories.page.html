@@ -1,0 +1,29 @@
+<app-header></app-header>
+<ion-content>
+    <img class="bg-cart1" src="{{'assets/imgs/bg-cart.jpg' }}">
+    <img class="bg-cart2" src="{{'assets/imgs/bg-cart2.png' }}">
+
+
+  <div class="poster">
+    <img class="poster-effect" src="{{'assets/imgs/baner.png' }}">
+  </div>
+  <div class="title-content">
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+    <div style="display: flex;">
+      <img class="img-menu" src="{{'assets/imgs/Menu.jpg' }}">
+      <img class="img-menu" style="margin-left: 16%;" src="{{'assets/imgs/reservar.png' }}">
+    </div>
+    <div class="line"></div>
+
+  </div>
+  <!-- <div class="movies-flex content-categoris">
+    <div class="movie" *ngFor="let cats of categoryList"
+      [routerLink]="['/products', {id: id, title: title , cat_id: cats.id, desc: shopt.description, cartTitle: cats.title}]">
+
+      <div class="title">{{cats.title }}</div>
+
+    </div>
+
+  </div> -->
+</ion-content>

@@ -1,0 +1,161 @@
+[
+  {
+    "id": 10,
+    "date_created": "2019-12-05T19:35:03",
+    "date_created_gmt": "2019-12-05T19:35:03",
+    "date_modified": "2019-12-05T19:35:04",
+    "date_modified_gmt": "2019-12-05T19:35:04",
+    "email": "test@mail.com",
+    "first_name": "Comida arabe",
+    "last_name": "",
+    "role": "wcfm_vendor",
+    "username": "Comida arabe",
+    "billing": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "postcode": "",
+      "country": "",
+      "state": "",
+      "email": "",
+      "phone": ""
+    },
+    "shipping": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "postcode": "",
+      "country": "",
+      "state": ""
+    },
+    "is_paying_customer": false,
+    "avatar_url": "https://secure.gravatar.com/avatar/97dfebf4098c0f5c16bca61e2b76c373?s=96&d=mm&r=g",
+    "meta_data": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://app.biciaccesorios.online/wp-json/wc/v3/customers/10"
+        }
+      ],
+      "collection": [
+        { "href": "https://app.biciaccesorios.online/wp-json/wc/v3/customers" }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "date_created": "2019-12-05T14:20:20",
+    "date_created_gmt": "2019-12-05T14:20:20",
+    "date_modified": "2019-12-06T01:17:47",
+    "date_modified_gmt": "2019-12-06T01:17:47",
+    "email": "mail001@mail.com",
+    "first_name": "",
+    "last_name": "",
+    "role": "wcfm_vendor",
+    "username": "jose001",
+    "billing": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "postcode": "",
+      "country": "",
+      "state": "",
+      "email": "mail001@mail.com",
+      "phone": ""
+    },
+    "shipping": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "postcode": "",
+      "country": "",
+      "state": ""
+    },
+    "is_paying_customer": false,
+    "avatar_url": "https://app.biciaccesorios.online/wp-content/uploads/2019/11/Zona6-scaled.jpg",
+    "meta_data": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://app.biciaccesorios.online/wp-json/wc/v3/customers/5"
+        }
+      ],
+      "collection": [
+        { "href": "https://app.biciaccesorios.online/wp-json/wc/v3/customers" }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "date_created": "2019-11-29T13:19:54",
+    "date_created_gmt": "2019-11-29T13:19:54",
+    "date_modified": "2019-12-06T01:16:54",
+    "date_modified_gmt": "2019-12-06T01:16:54",
+    "email": "milano@milano.com",
+    "first_name": "mi",
+    "last_name": "lano",
+    "role": "wcfm_vendor",
+    "username": "milano",
+    "billing": {
+      "first_name": "mi",
+      "last_name": "lano",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "postcode": "",
+      "country": "",
+      "state": "",
+      "email": "milano@milano.com",
+      "phone": ""
+    },
+    "shipping": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "postcode": "",
+      "country": "",
+      "state": ""
+    },
+    "is_paying_customer": false,
+    "avatar_url": "https://app.biciaccesorios.online/wp-content/uploads/2019/11/milano.jpg",
+    "meta_data": [
+      { "id": 72, "key": "wc_last_active", "value": "1575244800" },
+      { "id": 74, "key": "_previous_login", "value": "1575039231" },
+      { "id": 75, "key": "_current_login", "value": "1575303315" },
+      {
+        "id": 87,
+        "key": "community-events-location",
+        "value": { "ip": "200.110.168.0" }
+      },
+      { "id": 110, "key": "_store_setup", "value": "yes" },
+      { "id": 111, "key": "_wcfm_vendor_tax_migrated", "value": "yes" },
+      { "id": 113, "key": "_wcfm_menu_toggle_state", "value": "no" }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://app.biciaccesorios.online/wp-json/wc/v3/customers/2"
+        }
+      ],
+      "collection": [
+        { "href": "https://app.biciaccesorios.online/wp-json/wc/v3/customers" }
+      ]
+    }
+  }
+]

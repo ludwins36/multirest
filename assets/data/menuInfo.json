@@ -1,0 +1,13 @@
+[{
+    "name": "TERMINOS Y CONDICIONES",
+    "redirectTo": "/cart"
+}, {
+    "name": "TRATAMIENTO DE DATOS",
+    "redirectTo": "/food-search"
+}, {
+    "name": "CENTRO DE AYUDA",
+    "redirectTo": "/orders"
+}, {
+    "name": "EDITAR PERFIL",
+    "redirectTo": "/profile"
+}]

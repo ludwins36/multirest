@@ -1,0 +1,86 @@
+.form-center {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // min-height: 100%;
+    // position: relative;
+    // z-index: 100;
+    // background: rgba(0, 0, 0, 0.4);
+}
+
+ion-content {
+    --background: rgb(42, 43, 46);
+}
+
+ion-input {
+    --border-color: white;
+    --placeholder-font-weight: 300;
+}
+
+
+// .brand-logo {
+// 	height: 40px;
+// 	filter: contrast(0) brightness(200);
+// }
+
+ion-item {
+    margin: auto;
+    width: 70vw;
+    --background: rgb(42, 43, 46);
+    --color: white;
+    --border-color: white;
+    --border-width: 1px;
+    --border-radius: 30px;
+}
+
+ion-button {
+    height: 50px;
+    margin: auto;
+    width: 70vw;
+
+    --border-radius: 30px;
+    --background: rgb(221, 158, 0);
+}
+
+
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    right: -20%;
+
+    img {
+        height: 50%;
+        min-width: auto;
+        max-width: unset;
+    }
+}
+
+.logo {
+    margin-top: 20%;
+    z-index: 10;
+
+}
+
+.icon-face {
+    width: 50px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+ion-icon {
+    margin: auto;
+    font-size: 30px;
+
+}
+
+.label-register {
+    font-size: 12px;
+}
+
+ion-label {
+
+    font-size: 15px;
+}

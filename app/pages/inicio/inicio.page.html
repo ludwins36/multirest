@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+      <ion-button fill="clear" class="shadow-0 txt1" [routerLink]="'/inicio'" routerDirection="forward">
+        <img slot="start" size="5" class="imgHead" src="{{'assets/imgs/logo_app_sin.png' }}">
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-menu-button>
+        <ion-icon class="fs-24 txt1" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <!--
+    <ion-buttons slot="start">
+
+      <ion-button fill="clear" class="shadow-0 txt1" [routerLink]="'/mycart'" routerDirection="forward">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+
+    <!-- <ion-title>Inicio</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content fullscreen *ngIf="shops" class="bg-page">
+
+
+  <!-- <ion-searchbar (ionInput)="searchItem($event)" placeholder="Search restaurants here...">
+  </ion-searchbar> -->
+
+  <div class="movies-flex" *ngIf="shops">
+    <div class="grid-content">
+      <div class="movie" *ngFor="let cats of shops">
+        <div class="poster" [routerLink]="['/categories', {id: cats.id, title: cats.title, desription: cats.last_name }]">
+          <ion-img [src]="cats.img"></ion-img>
+          <!-- <img class="poster-effect" [src]="cats.logo"> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-promociones">
+
+  </div>
+</ion-content>

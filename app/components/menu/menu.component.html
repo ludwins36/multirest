@@ -1,0 +1,93 @@
+<ion-menu side="end" contentId="main">
+  <ion-header>
+    <!-- <ion-toolbar>
+        <ion-title>
+          Multi Restaurant 
+        </ion-title>
+      </ion-toolbar> -->
+  </ion-header>
+  <ion-content>
+
+    <br>
+    <br>
+
+    <div class="profile-menu-wrap" text-center *ngIf="user || user != null">
+      <div class="content-profile">
+        <div class="avt-thumb">
+          <img src="{{(user.avt != '' && user.avt != null)? user.avt : 'assets/imgs/profile.jpg' }}">
+        </div>
+
+
+        <h2 class="spacing-1 mgb-15 fs-20 capitalize txt1 fw-600">{{user.username}} {{user.fullname}}</h2>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="main-menu bg-l1 pdl-20">
+
+      <br>
+      <div class="line"></div>
+      <ion-list class="lst-no-background" no-margin no-lines>
+        <ion-item>
+          <ion-label class="label">{{'CREDITOS' | translate}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">{{'INGRESA TU CUPÓN' | translate}}</ion-label>
+        </ion-item>
+
+      </ion-list>
+
+
+
+      <app-notification></app-notification>
+
+
+      <ion-list class="lst-no-background" no-margin no-lines>
+        <ion-label class="ion-label">{{'Mi CUENTA' | translate}}</ion-label>
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of componentesAccount | async">
+          <ion-item [routerDirection]="'root'" routerLinkActive="active" [routerLink]="[p.redirectTo]" class="txt1">
+            <!-- <ion-icon slot="start" [name]="p.icon"></ion-icon> -->
+            <ion-label>{{p.name | translate}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <div class="line"></div>
+
+      <ion-list class="lst-no-background" no-margin no-lines>
+        <ion-label class="ion-label">{{'INFORMACIÓN' | translate}}</ion-label>
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of componentesInfo | async">
+          <ion-item [routerDirection]="'root'" routerLinkActive="active" [routerLink]="[p.redirectTo]" class="txt1">
+            <!-- <ion-icon slot="start" [name]="p.icon"></ion-icon> -->
+            <ion-label>{{p.name | translate}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list class="lst-no-background" no-margin no-lines>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item class="txt1" (click)="logout()">
+
+            <ion-label>{{'Logout' | translate}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list>
+
+      <br>
+      <br>
+
+    </div>
+
+
+
+
+  </ion-content>
+</ion-menu>
