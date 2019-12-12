@@ -37,11 +37,17 @@ export class CategoriesPage implements OnInit {
         version: 'wc/v3',
       });
   
-      this.Woocommerce.getAsync("products/categories").then(
+      this.Woocommerce.getAsync("products/categories?slug=" + this.id).then(
         
         data =>{
           let vendors = JSON.parse(data.body);
+          
           console.log(vendors);
+          this.Woocommerce.getAsync("products/categories?parent=" + vendors[0].id).then(
+            categoris => {
+              console.log(JSON.parse(categoris.body));
+            }
+          )
   
           // vendors.forEach(snap =>{
           //   this.shops.push({
